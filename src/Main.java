@@ -82,8 +82,6 @@ public class Main {
         for (Employee employee : employees)
             System.out.println(employee.getFIO());
     }
-
-
 }
 
 

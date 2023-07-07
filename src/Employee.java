@@ -35,7 +35,6 @@ public class Employee {
     public String toString() {
         return "ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
     }
-
 }
 
 
