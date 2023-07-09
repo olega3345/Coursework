@@ -1,20 +1,21 @@
-import org.w3c.dom.css.Counter;
 public class Employee {
-    private String FIO;
+    private String fio;
     private int Department;
     private float Salary;
-    private static int id;
-
-    public Employee(int id, String FIO, int Department, float Salary) {
-        super();
-        this.FIO = FIO;
+    private int id;
+    private static int counter = 0;
+    public Employee(){
+        this.id = counter++;
+    }
+    public Employee(String fio, int Department, float Salary) {
+        this.fio = fio;
         this.Department = Department;
         this.Salary = Salary;
-        id++;
+        this.id = counter++;
 
     }
     public String getFIO() {
-        return FIO;
+        return fio;
     }
     public float getSalary() {
         return Salary;
@@ -33,10 +34,9 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "ФИО: " + FIO + " Отдел: " + Department + " Зарплата: " + Salary;
+        return "ФИО: " + fio + " Отдел: " + Department + " Зарплата: " + Salary;
     }
 }
-
 
 
 
