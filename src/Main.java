@@ -69,7 +69,7 @@ public class Main {
     // ФИО всех сотруднриков
     private static void printFIO() {
         for (Employee employee : employees)
-            System.out.println(employee.getFIO());
+             System.out.println(employee.getFIO());
     }
 }
 

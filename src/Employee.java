@@ -31,7 +31,7 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "ФИО: " + fio + " Отдел: " + department + " Зарплата: " + salary;
+         return "ФИО: " + fio + " Отдел: " + department + " Зарплата: " + salary;
     }
 }
 
